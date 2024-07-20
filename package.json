@@ -1,9 +1,15 @@
 {
+  "private": true,
   "name": "polyjuice",
   "version": "1.0.0",
-  "private": true,
-  "workspaces": [ "packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": "git@github.com:eomttt/polyjuice.git",
   "author": "eomttt <hyunt0413@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "yarn@4.3.1"
 }
