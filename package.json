@@ -1,6 +1,8 @@
 {
   "name": "polyjuice",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [ "packages/*"],
   "repository": "git@github.com:eomttt/polyjuice.git",
   "author": "eomttt <hyunt0413@gmail.com>",
   "license": "MIT"
