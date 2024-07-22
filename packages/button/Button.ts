@@ -1,4 +1,4 @@
-class Button extends HTMLButtonElement {
+class Button extends HTMLElement {
   constructor() {
     // 클래스 초기화. 속성이나 하위 노드는 접근할 수는 없습니다.
     super();
@@ -10,7 +10,7 @@ class Button extends HTMLButtonElement {
   }
 
   connectedCallback() {
-    // DOM에 추가되었다. 렌더링 등의 처리.
+    this.innerHTML = '<button />';
   }
 
   disconnectedCallback() {
@@ -19,3 +19,5 @@ class Button extends HTMLButtonElement {
 }
 
 customElements.define('polyjuice-button', Button);
+
+export { Button };
