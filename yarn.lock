@@ -1851,6 +1851,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@polyjuice/switch@workspace:packages/switch":
+  version: 0.0.0-use.local
+  resolution: "@polyjuice/switch@workspace:packages/switch"
+  languageName: unknown
+  linkType: soft
+
 "@rollup/rollup-android-arm-eabi@npm:4.19.0":
   version: 4.19.0
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.19.0"
