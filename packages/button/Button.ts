@@ -6,22 +6,11 @@ class Button extends HTMLElement {
     this._root = this.attachShadow({ mode: 'open' });
   }
 
-  get leftSlot() {
-    return this.getAttribute('left-slot');
-  }
-
-  get rightSlot() {
-    return this.getAttribute('right-slot');
-  }
-
   connectedCallback() {
-    this._root.innerHTML = this.template({
-      leftSlot: this.leftSlot,
-      rightSlot: this.rightSlot,
-    });
+    this._root.innerHTML = this.template();
   }
 
-  template(state: { leftSlot: any; rightSlot: any }) {
+  template() {
     return `
       <button>
       <slot name="left-slot"></slot>
